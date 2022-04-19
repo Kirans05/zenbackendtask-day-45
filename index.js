@@ -181,6 +181,10 @@ app.post("/showurl",async (req,res) => {
 })
 
 
+app.get("/",async (req,res) => [
+    res.send("welcome")
+])
+
 app.listen(4000,()=>{
     console.log("port is running")
 })
