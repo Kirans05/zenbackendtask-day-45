@@ -11,6 +11,8 @@ app.use(cors())
 const url = `mongodb+srv://kiran:NRAgrrZT70l3ZH2x@cluster0.pchuk.mongodb.net/test?authSource=admin&replicaSet=atlas-sgk23x-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true`
 const databasenmae = "urlshortner"
 const client = new MongoClient(url)
+const cors = require("cors")
+app.use(cors())
 
 
 // signup process
